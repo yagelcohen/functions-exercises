@@ -7,37 +7,39 @@ function myReverse(str) {
 //Question 2
 
 function allCombinations(str){
-  let str1 =" "
-let combinations = [];
-    for (i=0; i<=str.length; i++){
-        for (j=i; j<=str.length; j++){
-         combinations.push(str.substring(i,j));
-        }
-    }
-    return combinations;
+  list_of_strings = new Array();
+  for(i=0;i<str.length;i++) {
+      for(j=i+1;j<str.length+1;j++) {
+          list_of_strings.push(str.slice(i, j));
+      }
+  }
+  return list_of_strings;
 }
 
 //Question 3
-function allCaps(isArray) {
-  let string = "";
- isArray1 = string.split("")
-isArray[0]=isArray[0].toUpperCase()
-    for(let i=0; i<isArray.length; i++){
-        if(isArray[i] === " "){
-          isArray[i+1] = isArray[i+1].toUpperCase();
+let string = "i Am A Cyber4s Student";
+function allCaps(string) {
+    for(let i=1; i<string.length; i++){
+        if(string[i] === " "){
+          string[i+1] =string[i+1].toUpperCase();
         }
     }
-    string=isArray.join("");   
-    return isArray;
-}   
+    string[0]=string[0].toUpperCase();
+    return string;
+    
+}
+        console.log( allCaps(string));
 
-        
+       
 //Question 4
 function myPower(x, n) {
-  let answer = " ";
-    answer = x**n ;
-    return answer;
+  let ans = 1;
+  for (var i =1; i <= n; i++)
+  {
+          ans *= x;        
   }
+  return ans;
+}
   
 
 //Question 5
