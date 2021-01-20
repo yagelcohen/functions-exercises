@@ -32,7 +32,7 @@ You _can_ test your code on your own in the `Exercise.js` file.
 **But**, to pass the task you should also pass the **automated tests**. You should have 6/6 (you start with 1/6 because of the bonus)
 
 To run the tests type `npm test` and press enter.
-
+s
 <br/>
 <br/>
 

@@ -18,19 +18,15 @@ function allCombinations(str){
 
 //Question 3
 let string = "i Am A Cyber4s Student";
-function allCaps(string) {
-    for(let i=1; i<string.length; i++){
-        if(string[i] === " "){
-          string[i+1] =string[i+1].toUpperCase();
-        }
-    }
-    string[0]=string[0].toUpperCase();
-    return string;
-    
+function allCaps(str) {
+  let answer = str[0]=str[0].toUpperCase();
+  for(let i=1; i<str.length; i++){
+      if(str[i-1] === " "){
+         answer += str[i].toUpperCase();
+      }else{answer+=str[i];}
+  }
+  return answer;
 }
-        console.log( allCaps(string));
-
-       
 //Question 4
 function myPower(x, n) {
   let ans = 1;
