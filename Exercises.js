@@ -32,12 +32,12 @@ function allCaps(myArray) {
         allCaps(myArray);
         string=myArray.join("");
 //Question 4
-let answer = " "
+let answer = " ";
 function myPower(x, n) {
-    answer = x**n 
+    answer = x**n ;
     return answer;
   }
-  myPower(x,n)
+  myPower(x,n);
   
 
 //Question 5
