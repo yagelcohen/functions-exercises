@@ -41,11 +41,19 @@ function myPower(x, n) {
   
 
 //Question 5
-function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+let string = 'abacddbec';
+let myArray = string.split("");
+function getFirstNotRepeating(myArray){
+    for(i=0; i<myArray.length; i++){
+        let count = 0;
+        for(j=0; j<myArray.length; j++){
+            if(myArray[i]===myArray[j] && i !== j){
+              count += 1;
+        }
+    } if(count === 0){ return myArray[i];}
+    }
 }
-
+console.log(getFirstNotRepeating(myArray));
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
   // your code here
