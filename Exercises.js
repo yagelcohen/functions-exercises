@@ -3,10 +3,10 @@ function myReverse(str) {
   return str.split("").reverse().join("");
     return "str";
 }
-  str = Number(myReverse(str));
+  str = Number(myReverse(str))
 
 //Question 2
-let str =""
+let str =" "
 let combinations = [];
 function allCombinations(str){
     for (i=0; i<=str.length; i++){
@@ -18,20 +18,27 @@ function allCombinations(str){
 }
         allCombinations(str)
 //Question 3
-
-function allCaps(str) {
-  // your code here
-  return "";
+let string = "my name is yagel";
+let myArray = string.split("")
+myArray[0]=myArray[0].toUpperCase()
+function allCaps(myArray) {
+    for(let i=0; i<myArray.length; i++){
+        if(myArray[i] === " "){
+            myArray[i+1] = myArray[i+1].toUpperCase();
+        }
+    }
+    return myArray;
 }
-
+        allCaps(myArray);
+        string=myArray.join("");
 //Question 4
 let answer = " "
 function myPower(x, n) {
     answer = x**n 
     return answer;
   }
-  myPower(2,10)
-  console.log(answer);
+  myPower(x,n)
+  
 
 //Question 5
 function getFirstNotRepeating(str) {
