@@ -3,12 +3,12 @@ function myReverse(str) {
   return str.split("").reverse().join("");
     return "str";
 }
-  str = Number(myReverse(str))
 
 //Question 2
-let str =" "
-let combinations = [];
+
 function allCombinations(str){
+  let str1 =" "
+let combinations = [];
     for (i=0; i<=str.length; i++){
         for (j=i; j<=str.length; j++){
          combinations.push(str.substring(i,j));
@@ -16,34 +16,34 @@ function allCombinations(str){
     }
     return combinations;
 }
-        allCombinations(str)
+
 //Question 3
-let string = "my name is yagel";
-let myArray = string.split("")
-myArray[0]=myArray[0].toUpperCase()
-function allCaps(myArray) {
-    for(let i=0; i<myArray.length; i++){
-        if(myArray[i] === " "){
-            myArray[i+1] = myArray[i+1].toUpperCase();
+function allCaps(isArray) {
+  let string = "";
+ isArray1 = string.split("")
+isArray[0]=isArray[0].toUpperCase()
+    for(let i=0; i<isArray.length; i++){
+        if(isArray[i] === " "){
+          isArray[i+1] = isArray[i+1].toUpperCase();
         }
     }
-    return myArray;
-}
-        allCaps(myArray);
-        string=myArray.join("");
+    string=isArray.join("");   
+    return isArray;
+}   
+
+        
 //Question 4
-let answer = " ";
 function myPower(x, n) {
+  let answer = " ";
     answer = x**n ;
     return answer;
   }
-  myPower(x,n);
   
 
 //Question 5
-let string = 'abacddbec';
-let myArray = string.split("");
 function getFirstNotRepeating(myArray){
+     let sent = " ";
+   myArray1 = sent.split("");
     for(i=0; i<myArray.length; i++){
         let count = 0;
         for(j=0; j<myArray.length; j++){
@@ -53,7 +53,7 @@ function getFirstNotRepeating(myArray){
     } if(count === 0){ return myArray[i];}
     }
 }
-console.log(getFirstNotRepeating(myArray));
+
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
   // your code here
