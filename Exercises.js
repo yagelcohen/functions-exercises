@@ -1,8 +1,9 @@
 //Question 1
 function myReverse(str) {
-  // your code here
-  return "";
+  return str.split("").reverse().join("");
+    return "str";
 }
+  str = Number(myReverse(str))
 
 //Question 2
 function allCombinations(str) {
